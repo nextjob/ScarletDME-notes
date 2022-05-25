@@ -131,7 +131,7 @@ Building qmEngine::
   compile qmEngTest
   
   echo "compile qmEngTest and link with libqmEng.so"
-  gcc -L./Engobj -Wall -Wformat=2 -Wno-format-nonliteral -DLINUX -D_FILE_OFFSET_BITS=64 -I ./gplsrc/ -DGPL -g  ./gplsrc/qmEngTest.c -o qmEngTest -lqmEng
+  gcc -L./Engobj -Wall -Wformat=2 -Wno-format-nonliteral -DLINUX -D_FILE_OFFSET_BITS=64 -I ./gplsrc/ -DGPL -g  ./gplsrc/qmEngTest.c -o qmEngTest -lqmEng -lpthread
 
   Rem! must export lib path 
    
