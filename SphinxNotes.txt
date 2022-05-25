@@ -1,0 +1,12 @@
+open cmd prompt
+cd C:\Sources\other\DocProject\doc\ScarletDME
+
+-- create rst files from help scribble html
+
+pandoc  -t rst hs100.htm  -o SCARLETDME.rst
+pandoc  -t rst hs200.htm  -o QM.rst
+
+-- edit index.rst
+
+
+sphinx-build -b html C:\Sources\other\DocProject\doc\ScarletDME C:\Sources\other\DocProject\doc\ScarletDME\_build
